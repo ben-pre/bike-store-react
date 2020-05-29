@@ -1,0 +1,121 @@
+:root{
+  --mainBlue:#212172;
+  --lightBlue:#009ffd;
+  --mainWhite:#F4F3EA;
+  --mainDark:#232428;
+  --mainYellow:#ffa400;
+}
+
+body{
+  font-family: 'Cabin', sans-serif !important;
+  background: var(--mainWhite) !important;
+  color: var(--mainDark) !important;
+}
+
+.text-title {
+  font-family: 'Merriweather', serif;
+  letter-spacing: 0.3rem;
+  text-transform: uppercase;
+}
+
+.text-blue {
+  color: --(var(--mainBlue));
+}
+
+.text-bright {
+  color: var(--lightBlue);
+}
+
+.btn-black {
+  background: transparent;
+  text-transform: capitalize;
+  font-size: 0.8rem !important;
+  color: var(--mainDark);
+  border-radius: 0 !important;
+  border: 0.1rem solid var(--mainDark) !important;
+}
+
+.btn-black:hover {
+  background: var(--mainDark) !important;
+  color: var(--mainWhite) !important;
+}
+
+.cart-icon {
+  cursor: pointer;
+  font-size: 1.2rem;
+  color: var(--mainYellow);
+}
+
+.cover {
+  background-image: url('./cover1.jpg');
+  height: 100vh;
+  max-width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  
+}
+
+.naslov {
+  color: #FFFFFF;
+  margin-top: 100px;
+  margin-left: 50px;
+  font-size: 5vw;
+
+}
+
+.btnShop {
+  margin-top: 5px;
+  margin-left: 50px;
+  background: #FFC56C;
+  color: #fff;
+  border: none;
+  margin-right: 5px;
+  width: 20vw;
+  
+
+}
+
+@media(max-width: 796px) {
+  button.btnShop {
+      margin-left: 0;
+      width: 100%;  
+  }
+
+  h1.naslov {
+    margin-top: 5;
+    margin-left: 0;
+    width: 100%;
+    margin-right: 0;
+    text-align: center;
+    font-size: 5vw;
+  }
+
+  
+
+}
+
+@media(max-width: 576px ) {
+  .cover {
+    background-image: url('./cover1.jpg');
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  h1.naslov {
+    margin-top: 5vh;
+    margin-bottom: 3vh;
+    font-size: 22px;
+
+  }
+
+  button.btnShop {
+    margin-top: 0;
+    margin-left: 0;
+    width: 100%;
+    font-size: 4vw;
+}
+
+}
